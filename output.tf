@@ -8,6 +8,6 @@ output "executor_role_name" {
   description = "Name of the IAM Role in all target accounts for Stack Set operations"
 }
 
-output "" {
-  value = ""
+output "name" {
+  value = "${join("", aws_cloudformation_stack_set.default.*.name)}"
 }
