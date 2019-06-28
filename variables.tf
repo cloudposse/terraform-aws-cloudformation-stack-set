@@ -53,7 +53,7 @@ variable "capabilities" {
 }
 
 variable "executor_role_name" {
-  default = "AWSCloudFormationStackSetExecutionRole"
+  default     = "AWSCloudFormationStackSetExecutionRole"
   description = "Name of the IAM Role in all target accounts for Stack Set operations"
 }
 
