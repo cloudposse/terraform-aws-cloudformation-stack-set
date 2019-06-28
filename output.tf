@@ -10,4 +10,5 @@ output "executor_role_name" {
 
 output "name" {
   value = "${join("", aws_cloudformation_stack_set.default.*.name)}"
+  description = "Name of the Stack Set"
 }
