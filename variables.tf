@@ -1,7 +1,3 @@
-variable "aws_assume_role_arn" {
-  type = "string"
-}
-
 variable "enabled" {
   description = "Set to false to prevent the module from creating any resources"
   default     = "true"
