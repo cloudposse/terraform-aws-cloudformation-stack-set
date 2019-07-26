@@ -19,7 +19,7 @@ data "aws_iam_policy_document" "admin" {
 }
 
 module "admin_role" {
-  source = "git::https://github.com/cloudposse/terraform-aws-iam-role.git?ref=tags/0.3.0"
+  source = "git::https://github.com/cloudposse/terraform-aws-iam-role.git?ref=tags/0.4.0"
 
   enabled            = "${var.enabled}"
   namespace          = "${var.namespace}"
