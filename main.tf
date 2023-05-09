@@ -8,6 +8,7 @@ module "label" {
   delimiter  = "${var.delimiter}"
   attributes = "${var.attributes}"
   tags       = "${var.tags}"
+  
 }
 
 data "aws_iam_policy_document" "admin" {
