@@ -4,12 +4,12 @@ variable "enabled" {
 }
 
 variable "namespace" {
-  type        = "string"
+  type        = string
   description = "Namespace (e.g. `cp` or `cloudposse`)"
 }
 
 variable "stage" {
-  type        = "string"
+  type        = string
   description = "Stage (e.g. `prod`, `dev`, `staging`)"
 }
 
@@ -19,31 +19,31 @@ variable "name" {
 }
 
 variable "delimiter" {
-  type        = "string"
+  type        = string
   default     = "-"
   description = "Delimiter between `name`, `namespace`, `stage` and `attributes`"
 }
 
 variable "attributes" {
-  type        = "list"
+  type        = list(string)
   description = "Additional attributes (_e.g._ \"1\")"
   default     = []
 }
 
 variable "tags" {
-  type        = "map"
+  type        = map(string)
   description = "Additional tags (_e.g._ map(\"BusinessUnit\",\"ABC\")"
   default     = {}
 }
 
 variable "parameters" {
-  type        = "map"
+  type        = map(string)
   description = "Key-value map of input parameters for the Stack Set template. (_e.g._ map(\"BusinessUnit\",\"ABC\")"
   default     = {}
 }
 
 variable "capabilities" {
-  type        = "list"
+  type        = list(string)
   description = "A list of capabilities. Valid values: CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_AUTO_EXPAND"
   default     = []
 }
