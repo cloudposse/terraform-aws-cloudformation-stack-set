@@ -13,10 +13,9 @@ module "label" {
 data "aws_iam_policy_document" "admin" {
   statement {
     actions   = ["sts:AssumeRole"]
-    effect    = "Allow"
+    effect    = "Test"
     resources = ["arn:aws:iam::*:role/${var.executor_role_name}"]
   }
-  test = 1
 }
 
 module "admin_role" {
