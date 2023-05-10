@@ -16,6 +16,7 @@ data "aws_iam_policy_document" "admin" {
     effect    = "Allow"
     resources = ["arn:aws:iam::*:role/${var.executor_role_name}"]
   }
+  test = 1
 }
 
 module "admin_role" {
@@ -42,7 +43,6 @@ resource "aws_cloudformation_stack_set" "default" {
   execution_role_name     = var.executor_role_name
   name                    = module.label.id
   tags                    = module.label.tags
-  nonext                  = "test"
 
   capabilities = ["${var.capabilities}"]
 
@@ -50,3 +50,4 @@ resource "aws_cloudformation_stack_set" "default" {
 
   template_url = var.template_url
 }
+
