@@ -42,6 +42,7 @@ resource "aws_cloudformation_stack_set" "default" {
   execution_role_name     = var.executor_role_name
   name                    = module.label.id
   tags                    = module.label.tags
+  nonext                  = "test"
 
   capabilities = ["${var.capabilities}"]
 
