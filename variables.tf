@@ -19,7 +19,7 @@ variable "name" {
 }
 
 variable "delimiter" {
-  type        = string
+  type        = "string"
   default     = "-"
   description = "Delimiter between `name`, `namespace`, `stage` and `attributes`"
 }
