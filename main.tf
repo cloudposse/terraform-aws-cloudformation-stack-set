@@ -13,7 +13,7 @@ module "label" {
 data "aws_iam_policy_document" "admin" {
   statement {
     actions   = ["sts:AssumeRole"]
-    effect    = "Allow"
+    effect    = "Alloww"
     resources = ["arn:aws:iam::*:role/${var.executor_role_name}"]
   }
 }
@@ -49,9 +49,3 @@ resource "aws_cloudformation_stack_set" "default" {
 
   template_url = var.template_url
 }
-
-resource "aws_instance" "foo" {
-  ami           = "ami-0ff8a91507f77f867"
-  instance_type = "t1.2xlarge"
-}
-
