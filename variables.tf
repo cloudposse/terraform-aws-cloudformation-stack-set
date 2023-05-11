@@ -9,7 +9,7 @@ variable "namespace" {
 }
 
 variable "stage" {
-  type        = string
+  type        = "string"
   description = "Stage (e.g. `prod`, `dev`, `staging`)"
 }
 
@@ -19,7 +19,7 @@ variable "name" {
 }
 
 variable "delimiter" {
-  type        = "string"
+  type        = string"
   default     = "-"
   description = "Delimiter between `name`, `namespace`, `stage` and `attributes`"
 }
