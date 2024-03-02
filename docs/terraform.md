@@ -14,7 +14,7 @@ No requirements.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_admin_role"></a> [admin\_role](#module\_admin\_role) | git::https://github.com/cloudposse/terraform-aws-iam-role.git | tags/0.4.0 |
-| <a name="module_label"></a> [label](#module\_label) | git::https://github.com/cloudposse/terraform-null-label.git | tags/0.5.3 |
+| <a name="module_label"></a> [label](#module\_label) | git::https://github.com/cloudposse/terraform-null-label.git | 0.25.0 |
 
 ## Resources
 
