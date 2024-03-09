@@ -1,4 +1,3 @@
----
 #
 # This is the canonical configuration for the `README.md`
 # Run `make readme` to rebuild the `README.md`
@@ -18,16 +17,17 @@ github_repo: cloudposse/terraform-aws-cloudformation-stack-set
 
 # Badges to display
 badges:
-  - name: "Build Status"
-    image: "https://g.codefresh.io/api/badges/pipeline/cloudposse/cloudposse%2Fterraform-aws-cloudformation-stack-set%2Flint?type=cf-1"
-    url: "https://g.codefresh.io/public/accounts/cloudposse/pipelines/cloudposse/terraform-aws-cloudformation-stack-set/lint"
-  - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/terraform-aws-cloudformation-stack-set.svg"
-    url: "https://github.com/cloudposse/terraform-aws-cloudformation-stack-set/releases/latest"
-  - name: "Slack Community"
-    image: "https://slack.cloudposse.com/badge.svg"
-    url: "https://slack.cloudposse.com"
+  - name: Latest Release
+    image: https://img.shields.io/github/release/cloudposse/terraform-aws-cloudformation-stack-set.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-aws-cloudformation-stack-set/releases/latest
+  - name: Last Updated
+    image: https://img.shields.io/github/last-commit/cloudposse/terraform-aws-cloudformation-stack-set.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-aws-cloudformation-stack-set/commits
+  - name: Slack Community
+    image: https://slack.cloudposse.com/for-the-badge.svg
+    url: https://slack.cloudposse.com
 
+# List any related terraform modules that this module may be used with or that this module depends on.
 related:
 
 # Short description of this project
@@ -67,6 +67,4 @@ include:
   - "docs/terraform.md"
 
 # Contributors to this project
-contributors:
-  - name: "Igor Rodionov"
-    github: "goruha"
+contributors: []
