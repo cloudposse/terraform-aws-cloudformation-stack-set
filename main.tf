@@ -43,7 +43,7 @@ resource "aws_cloudformation_stack_set" "default" {
   name                    = module.label.id
   tags                    = module.label.tags
 
-  capabilities = ["${var.capabilities}"]
+  capabilities = var.capabilities
 
   parameters = var.parameters
 
