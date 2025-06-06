@@ -1,6 +1,6 @@
 # Define composite variables for resources
 module "label" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.5.3"
+  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.25.0"
   enabled    = var.enabled
   namespace  = var.namespace
   name       = var.name
@@ -19,7 +19,7 @@ data "aws_iam_policy_document" "admin" {
 }
 
 module "admin_role" {
-  source = "git::https://github.com/cloudposse/terraform-aws-iam-role.git?ref=tags/0.4.0"
+  source = "git::https://github.com/cloudposse/terraform-aws-iam-role.git?ref=tags/0.19.0"
 
   enabled            = var.enabled
   namespace          = var.namespace
@@ -43,7 +43,7 @@ resource "aws_cloudformation_stack_set" "default" {
   name                    = module.label.id
   tags                    = module.label.tags
 
-  capabilities = ["${var.capabilities}"]
+  capabilities = var.capabilities
 
   parameters = var.parameters
 
